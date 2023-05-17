@@ -1,25 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Pagina web</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+
 </head>
 
 <body>
-    <h1>Bienvenido a Mi Página Web</h1>
+    <header>
+        <nav class="navbar">
+            <div>
+                <h2>A<span>A</span></h2>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h1>Quien es <span>Andres Felipe Alvarez Perea</span></h1>
+            <p>Desarrollador web con más de 4 años de experiencia en los siguientes lenguajes: PHP, HTML, CSS3, JS,
+                Drupal,
+                MySQL
+                Además, estoy constantemente buscando oportunidades para seguir ampliando mis conocimientos en el
+                emocionante mundo de
+                la programación.</p>
+            <a download href="#">
+                <button>Descargar hoja de vida</button></a>
+        </div>
 
-    <p>Esta es una página web interactiva.</p>
-
-    <button onclick="mostrarMensaje()">Haz clic</button>
-
-    <script>
-        function mostrarMensaje() {
-            alert("¡Has hecho clic en el botón!");
-        }
-    </script>
+        <img src="images/photo.png" />
+    </main>
 </body>
 
 </html>
