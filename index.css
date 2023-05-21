@@ -1,129 +1,198 @@
 /* Estilos CSS para el menú */
+
+/* Estilos para la lista desordenada */
 ul {
     list-style-type: none;
+    /* Elimina los marcadores de lista */
     margin: 0;
+    /* Elimina el margen exterior de la lista */
     padding: 0;
+    /* Elimina el relleno interno de la lista */
     overflow: hidden;
+    /* Oculta el contenido que desborda la lista */
     background-color: #333;
+    /* Establece el color de fondo de la lista en gris oscuro (#333) */
 }
 
+/* Estilos para los elementos de la lista */
 li {
     float: left;
+    /* Hace que los elementos de la lista floten a la izquierda, creando un diseño horizontal */
 }
 
+/* Estilos para los enlaces dentro de los elementos de la lista */
 li a {
     display: block;
+    /* Convierte los enlaces en elementos de bloque */
     color: white;
+    /* Establece el color del texto en blanco */
     text-align: center;
+    /* Centra el texto dentro de los enlaces */
     padding: 14px 16px;
+    /* Establece el relleno (padding) en la parte superior e inferior de 14px y en los lados izquierdo y derecho de 16px */
     text-decoration: none;
+    /* Elimina la decoración de subrayado de los enlaces */
 }
 
+/* Estilos generales para el cuerpo de la página */
 body {
     font-family: 'Montserrat', sans-serif;
+    /* Establece la fuente de texto 'Montserrat' como la fuente predeterminada */
     background-color: #333;
+    /* Establece el color de fondo en gris oscuro (#333) */
 }
 
+/* Estilos generales para todos los elementos */
 * {
     margin: 0;
+    /* Elimina el margen exterior de todos los elementos */
     padding: 0;
+    /* Elimina el relleno interno de todos los elementos */
     box-sizing: border-box;
+    /* Establece el modelo de caja como "border-box" para que el tamaño total de un elemento incluya el relleno y el borde */
 }
 
+/* Estilos para el encabezado */
 header {
     color: #ffffff;
+    /* Establece el color de texto en blanco */
 }
 
 header h2 span {
     color: aquamarine;
+    /* Establece el color de texto en aquamarine para los elementos <span> dentro de los encabezados <h2> */
 }
 
+/* Estilos para la barra de navegación */
 .navbar {
     display: flex;
+    /* Establece el contenedor de la barra de navegación como un contenedor flexible */
     justify-content: space-between;
+    /* Distribuye el espacio disponible entre los elementos de la barra de navegación */
     padding: 2rem;
+    /* Establece el relleno (padding) en todos los lados de 2rem */
 }
 
+/* Estilos para el menú */
 .menu {
     display: flex;
+    /* Establece el menú como un contenedor flexible */
     width: 50%;
+    /* Establece el ancho del menú en el 50% del contenedor padre */
     justify-content: space-around;
+    /* Distribuye el espacio disponible alrededor de los elementos del menú */
 }
 
 .menu li {
     list-style: none;
+    /* Elimina los marcadores de lista para los elementos del menú */
 }
 
 .menu a {
     color: #ffffff;
+    /* Establece el color de texto en blanco para los enlaces del menú */
     text-decoration: none;
+    /* Elimina la decoración de subrayado de los enlaces del menú */
 }
 
 .menu .active {
     color: aquamarine;
+    /* Establece el color de texto en aquamarine para los elementos del menú activos */
 }
 
 .menu li:hover {
     background-color: aquamarine;
+    /* Establece el color de fondo en aquamarine para los elementos del menú al pasar el cursor sobre ellos */
     transition: ease-in .5s;
+    /* Agrega una transición suave de 0.5 segundos al cambio de color de fondo */
 }
 
 .menu a:hover {
     color: #333;
+    /* Establece el color de texto en gris oscuro (#333) para los enlaces del menú al pasar el cursor sobre ellos */
 }
 
+/* Estilos para el contenido principal */
 main h1 span {
     color: aquamarine;
+    /* Establece el color de texto en aquamarine para los elementos <span> dentro de los encabezados <h1> en el contenido principal */
 }
 
 main {
     color: #ffffff;
+    /* Establece el color de texto en blanco para el contenido principal */
     display: flex;
+    /* Establece el contenido principal como un contenedor flexible */
     padding: 2rem;
+    /* Establece el relleno (padding) en todos los lados de 2rem */
     align-items: center;
+    /* Centra verticalmente los elementos dentro del contenido principal */
 }
 
 main div {
     display: flex;
+    /* Establece los elementos <div> dentro del contenido principal como contenedores flexibles */
     flex-direction: column;
+    /* Establece la dirección de los elementos <div> como columna */
     justify-content: space-evenly;
+    /* Distribuye el espacio disponible de manera uniforme entre los elementos <div> */
     align-items: center;
+    /* Centra verticalmente los elementos dentro de los elementos <div> */
 }
 
 main h1 {
     margin-bottom: 2rem;
+    /* Establece un margen inferior de 2rem para los encabezados <h1> en el contenido principal */
 }
 
 main p {
     margin-bottom: 2rem;
+    /* Establece un margen inferior de 2rem para los párrafos en el contenido principal */
 }
 
 main div {
     padding: 2rem;
+    /* Establece el relleno (padding) en todos los lados de 2rem para los elementos <div> dentro del contenido principal */
 }
 
+/* Estilos para el botón de descarga de PDF */
 .descarga-pdf button {
     padding: 10px 20px;
+    /* Establece el relleno (padding) de 10px en la parte superior e inferior y de 20px en los lados izquierdo y derecho del botón de descarga de PDF */
     background-color: aquamarine;
+    /* Establece el color de fondo del botón en aquamarine */
     border: none;
+    /* Elimina el borde del botón */
     border-radius: 20px;
+    /* Establece el radio de la esquina del botón en 20px para que tenga forma redondeada */
     margin-top: 2rem;
+    /* Establece un margen superior de 2rem para el botón de descarga de PDF */
     cursor: pointer;
+    /* Cambia el cursor del mouse a un puntero al pasar por encima del botón */
     box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .69);
+    /* Agrega una sombra al botón */
 }
 
 .descarga-pdf button:hover {
     background-color: #ffffff;
+    /* Cambia el color de fondo del botón a blanco al pasar el cursor sobre él */
     box-shadow: none;
+    /* Elimina la sombra del botón al pasar el cursor sobre él */
 }
 
+/* Estilos para la sección "Acerca de" */
 .about {
     color: #ffffff;
+    /* Establece el color de texto en blanco para la sección "Acerca de" */
     display: flex;
+    /* Establece la sección "Acerca de" como un contenedor flexible */
     padding: 2rem;
+    /* Establece el relleno (padding) en todos los lados de 2rem */
     align-items: center;
+    /* Centra verticalmente los elementos dentro de la sección "Acerca de" */
 }
 
 .about p {
     padding: 2rem;
+    /* Establece el relleno (padding) en todos los lados de 2rem para los párrafos dentro de la sección "Acerca de" */
 }
