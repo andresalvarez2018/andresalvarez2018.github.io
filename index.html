@@ -8,10 +8,10 @@
     <title>Mi Pagina web</title>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="index.css">
-
 </head>
 
 <body>
+    <div id="sparkles-container"></div>
     <header>
         <nav class="navbar">
             <div>
@@ -20,7 +20,7 @@
             <ul class="menu">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#about">Acerca de mi</a></li>
-                <li><a href="#">Servicios</a></li>
+                <li><a href="#services">Servicios</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
@@ -41,7 +41,7 @@
         <img src="images/photo.png" />
     </main>
     <div class="about" id="about">
-        <img src="images/photo.png" />
+        <img src="images/about.jpg" />
         <div>
             <p>Soy un apasionado desarrollador web con más de 4 años de experiencia en el fascinante mundo de la
                 programación. Durante
@@ -51,7 +51,8 @@
                 conocimientos sólidos y habilidades especializadas en diferentes áreas.
             </p>
             <p>
-                Mi enfoque principal se ha centrado en el desarrollo web, y he dominado varios lenguajes clave como PHP, HTML, CSS3, JS,
+                Mi enfoque principal se ha centrado en el desarrollo web, y he dominado varios lenguajes clave como PHP,
+                HTML, CSS3, JS,
                 Drupal y
                 MySQL. Estos lenguajes son la columna vertebral de la web moderna y me han permitido crear sitios
                 web
@@ -98,6 +99,54 @@
 
         </div>
     </div>
+    <div class="services" id="services">
+        <div class="servicios-container">
+            <div class="servicio-card">
+                <img src="images/diseño.jpg" alt="Diseño">
+                <h3>Diseño Web Personalizado</h3>
+                <p>Creamos diseños web personalizados y atractivos que se adaptan a tus necesidades y objetivos. Nuestro
+                    enfoque se basa en
+                    la usabilidad, la estética y la experiencia del usuario para garantizar un sitio web atractivo y
+                    funcional.</p>
+                <a href="#">Más información</a>
+            </div>
+
+            <div class="servicio-card">
+                <img src="images/frontend.jpg" alt="Servicio 2">
+                <h3>Desarrollo Front-end</h3>
+                <p>Me especializo en el desarrollo front-end utilizando las últimas tecnologías web. Creo interfaces
+                    interactivas y
+                    receptivas que brindan una experiencia de usuario excepcional en diferentes dispositivos y
+                    navegadores.</p>
+                <a href="#">Más información</a>
+            </div>
+
+            <div class="servicio-card">
+                <img src="images/backend.jpg" alt="Servicio 3">
+                <h3>Desarrollo Backend</h3>
+                <p>Me especializo en el desarrollo backend, creando la lógica y funcionalidad detrás de las aplicaciones
+                    web. Utilizo
+                    diferentes tecnologías y frameworks para diseñar bases de datos, crear API y gestionar la lógica del
+                    servidor. Trabajo
+                    en estrecha colaboración con el equipo de desarrollo para garantizar un rendimiento óptimo y una
+                    experiencia de usuario
+                    fluida en tu aplicación web.</p>
+                <a href="#">Más información</a>
+            </div>
+
+            <div class="servicio-card">
+                <img src="images/seo.jpg" alt="Servicio 3">
+                <h3>Optimización de SEO</h3>
+                <p>Mejoro la visibilidad de tu sitio web en los motores de búsqueda mediante la implementación de
+                    técnicas de optimización
+                    de SEO. Trabajo en la estructura del sitio, la investigación de palabras clave, la optimización de
+                    contenido y otros
+                    aspectos clave para aumentar tu clasificación y atraer más tráfico orgánico.</p>
+                <a href="#">Más información</a>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
 </body>
 
 </html>

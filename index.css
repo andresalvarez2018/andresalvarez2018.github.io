@@ -196,3 +196,139 @@ main div {
     padding: 2rem;
     /* Establece el relleno (padding) en todos los lados de 2rem para los párrafos dentro de la sección "Acerca de" */
 }
+
+/* Estilos CSS para el contenedor de las chispitas */
+#sparkles-container {
+    position: fixed;
+    /* Establece la posición fija para el contenedor */
+    top: 0;
+    /* Ubica el contenedor en la parte superior */
+    left: 0;
+    /* Ubica el contenedor en la parte izquierda */
+    width: 100%;
+    /* Establece el ancho del contenedor al 100% del viewport */
+    height: 100%;
+    /* Establece la altura del contenedor al 100% del viewport */
+    pointer-events: none;
+    /* Desactiva los eventos de puntero en el contenedor */
+    overflow: hidden;
+    /* Oculta las chispas que se salgan del contenedor */
+}
+
+/* Estilos CSS para las chispas */
+.sparkle {
+    position: absolute;
+    /* Establece la posición absoluta para las chispas */
+    top: 0;
+    /* Ubica las chispas en la parte superior del contenedor */
+    left: 0;
+    /* Ubica las chispas en la parte izquierda del contenedor */
+    width: 10px;
+    /* Establece el ancho de las chispas */
+    height: 10px;
+    /* Establece la altura de las chispas */
+    background-color: yellow;
+    /* Establece el color de fondo de las chispas como amarillo */
+    border-radius: 50%;
+    /* Establece el radio de borde para que las chispas sean círculos */
+    pointer-events: none;
+    /* Desactiva los eventos de puntero en las chispas */
+    transform: scale(0);
+    /* Establece la escala inicial de las chispas en 0, lo que las hace invisibles */
+    animation: sparkleEffect 1s infinite;
+    /* Agrega la animación "sparkleEffect" a las chispas, con una duración de 1 segundo y se repite infinitamente */
+}
+
+@keyframes sparkleEffect {
+    0% {
+        opacity: 0;
+        /* Al inicio de la animación, establece la opacidad de las chispas en 0, haciéndolas invisibles */
+        transform: scale(0);
+        /* Al inicio de la animación, establece la escala de las chispas en 0 */
+    }
+
+    50% {
+        opacity: 1;
+        /* A la mitad de la animación, establece la opacidad de las chispas en 1, haciéndolas completamente visibles */
+        transform: scale(1);
+        /* A la mitad de la animación, establece la escala de las chispas en 1 */
+    }
+
+    100% {
+        opacity: 0;
+        /* Al final de la animación, establece la opacidad de las chispas en 0, haciéndolas invisibles */
+        transform: scale(0);
+        /* Al final de la animación, establece la escala de las chispas en 0 */
+    }
+}
+
+.servicios-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.servicio-card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+}
+
+.servicio-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.servicio-card h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.servicio-card p {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.servicio-card a {
+    padding: 10px 20px;
+    /* Establece el relleno (padding) de 10px en la parte superior e inferior y de 20px en los lados izquierdo y derecho del botón de descarga de PDF */
+    background-color: aquamarine;
+    /* Establece el color de fondo del botón en aquamarine */
+    border: none;
+    /* Elimina el borde del botón */
+    border-radius: 20px;
+    /* Establece el radio de la esquina del botón en 20px para que tenga forma redondeada */
+    margin-top: 4rem;
+    /* Establece un margen superior de 2rem para el botón de descarga de PDF */
+    cursor: pointer;
+    /* Cambia el cursor del mouse a un puntero al pasar por encima del botón */
+    box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .69);
+    /* Agrega una sombra al botón */
+}
+
+.servicio-card a:hover {
+    background-color: #ffffff;
+    /* Cambia el color de fondo del botón a blanco al pasar el cursor sobre él */
+    box-shadow: none;
+    /* Elimina la sombra del botón al pasar el cursor sobre él */
+}
+
+.servicio-card a {
+    text-decoration: none;
+    color: #666;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 600px) {
+    .servicio-card {
+        width: 100%;
+    }
+}
