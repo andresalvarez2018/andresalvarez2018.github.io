@@ -264,37 +264,57 @@ main div {
 
 .servicios-container {
     display: flex;
+    /* Establece el contenedor como un contenedor flexible */
     justify-content: center;
+    /* Centra horizontalmente los elementos dentro del contenedor */
     align-items: center;
+    /* Centra verticalmente los elementos dentro del contenedor */
     flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan a una nueva línea si no caben en una sola línea */
     margin-top: 30px;
+    /* Establece un margen superior de 30px para separar el contenedor de otros elementos */
 }
 
 .servicio-card {
     width: 300px;
+    /* Establece un ancho fijo de 300px para las cards */
     background-color: #fff;
+    /* Establece el color de fondo de las cards como blanco */
     border-radius: 5px;
+    /* Agrega esquinas redondeadas con un radio de 5px a las cards */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Agrega una sombra suave a las cards */
     margin: 10px;
+    /* Establece un margen de 10px alrededor de las cards */
     padding: 20px;
+    /* Establece un relleno interno de 20px dentro de las cards */
 }
 
 .servicio-card img {
     width: 100%;
+    /* Establece el ancho de la imagen dentro de las cards al 100% del contenedor */
     height: auto;
+    /* Ajusta automáticamente la altura de la imagen para mantener la proporción */
     border-radius: 5px;
+    /* Agrega esquinas redondeadas con un radio de 5px a la imagen */
     margin-bottom: 10px;
+    /* Agrega un margen inferior de 10px a la imagen dentro de las cards */
 }
 
 .servicio-card h3 {
     font-size: 20px;
+    /* Establece el tamaño de fuente del título de la card en 20px */
     color: #333;
+    /* Establece el color del texto del título de la card como gris oscuro */
     margin-bottom: 10px;
+    /* Agrega un margen inferior de 10px al título de la card */
 }
 
 .servicio-card p {
     color: #666;
+    /* Establece el color del texto del párrafo de la card como gris */
     margin-bottom: 2rem;
+    /* Agrega un margen inferior de 2rem al párrafo de la card */
 }
 
 .servicio-card a {
