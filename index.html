@@ -21,7 +21,7 @@
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#about">Acerca de mi</a></li>
                 <li><a href="#services">Servicios</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -108,7 +108,7 @@
                     enfoque se basa en
                     la usabilidad, la estética y la experiencia del usuario para garantizar un sitio web atractivo y
                     funcional.</p>
-                <a href="#">Más información</a>
+                <a href="#contacto">Más información</a>
             </div>
 
             <div class="servicio-card">
@@ -118,7 +118,7 @@
                     interactivas y
                     receptivas que brindan una experiencia de usuario excepcional en diferentes dispositivos y
                     navegadores.</p>
-                <a href="#">Más información</a>
+                <a href="#contacto">Más información</a>
             </div>
 
             <div class="servicio-card">
@@ -131,7 +131,7 @@
                     en estrecha colaboración con el equipo de desarrollo para garantizar un rendimiento óptimo y una
                     experiencia de usuario
                     fluida en tu aplicación web.</p>
-                <a href="#">Más información</a>
+                <a href="#contacto">Más información</a>
             </div>
 
             <div class="servicio-card">
@@ -142,10 +142,30 @@
                     de SEO. Trabajo en la estructura del sitio, la investigación de palabras clave, la optimización de
                     contenido y otros
                     aspectos clave para aumentar tu clasificación y atraer más tráfico orgánico.</p>
-                <a href="#">Más información</a>
+                <a href="#contacto">Más información</a>
             </div>
         </div>
     </div>
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form action="#">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
     <script src="index.js"></script>
 </body>
 
