@@ -73,7 +73,7 @@ header h2 span {
     /* Establece el relleno (padding) en todos los lados de 2rem */
     align-items: center;
     /* Centra verticalmente los elementos de la barra de navegación */
-}       
+}
 
 /* Estilos para el menú */
 .menu {
@@ -343,66 +343,98 @@ main div {
     /* Elimina la sombra del botón al pasar el cursor sobre él */
 }
 
+/* Estilos para el enlace dentro de .servicio-card */
 .servicio-card a {
     text-decoration: none;
+    /* Elimina la decoración de subrayado del enlace */
     color: #666;
+    /* Establece el color del texto en #666 */
 }
 
-/* Estilos responsivos */
+/* Estilos responsivos para .servicio-card en pantallas con un ancho máximo de 600px */
 @media screen and (max-width: 600px) {
     .servicio-card {
         width: 100%;
+        /* Establece el ancho de .servicio-card en el 100% del contenedor padre */
     }
 }
 
+/* Estilos para la sección de contacto */
 .contact-section {
     background-color: #f7f7f7;
+    /* Establece el color de fondo en #f7f7f7 */
     padding: 60px 0;
+    /* Establece el relleno (padding) en la parte superior e inferior de 60px y en los lados izquierdo y derecho de 0 */
     text-align: center;
+    /* Centra el contenido de la sección de contacto horizontalmente */
 }
 
+/* Estilos para el contenedor */
 .container {
     max-width: 800px;
+    /* Establece el ancho máximo del contenedor en 800px */
     margin: 0 auto;
+    /* Centra el contenedor horizontalmente */
 }
 
 h2 {
     font-size: 36px;
+    /* Establece el tamaño de fuente en 36px */
     margin-bottom: 40px;
+    /* Establece el margen inferior en 40px */
 }
 
 .form-group {
     margin-bottom: 20px;
+    /* Establece el margen inferior en 20px */
 }
 
 label {
     display: block;
+    /* Hace que las etiquetas sean elementos de bloque */
     font-size: 18px;
+    /* Establece el tamaño de fuente en 18px */
     margin-bottom: 10px;
+    /* Establece el margen inferior en 10px */
     color: #333;
+    /* Establece el color del texto en #333 */
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
     width: 100%;
+    /* Establece el ancho del campo de texto en el 100% del contenedor padre */
     padding: 10px;
+    /* Establece el relleno (padding) en 10px */
     font-size: 16px;
+    /* Establece el tamaño de fuente en 16px */
     border: 1px solid #ccc;
+    /* Establece un borde de 1px sólido en #ccc */
     border-radius: 4px;
+    /* Establece un radio de borde de 4px */
 }
 
 button[type="submit"] {
     padding: 12px 24px;
+    /* Establece el relleno (padding) en la parte superior e inferior de 12px y en los lados izquierdo y derecho de 24px */
     background-color: #4caf50;
+    /* Establece el color de fondo en #4caf50 */
     color: #fff;
+    /* Establece el color del texto en blanco */
     border: none;
+    /* Elimina el borde */
     border-radius: 4px;
+    /* Establece un radio de borde de 4px */
     font-size: 18px;
+    /* Establece el tamaño de fuente en 18px */
     cursor: pointer;
+    /* Cambia el cursor al estilo de "puntero" al pasar por encima del botón */
     transition: background-color 0.3s ease;
+    /* Agrega una transición suave de 0.3 segundos al color de fondo */
 }
 
 button[type="submit"]:hover {
     background-color: #45a049;
+    /* Cambia el color de fondo a #45a049 al pasar por encima del botón */
 }
