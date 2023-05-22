@@ -98,8 +98,15 @@ header h2 span {
 }
 
 .menu .active {
-    color: aquamarine;
-    /* Establece el color de texto en aquamarine para los elementos del menú activos */
+    background-color: aquamarine;
+    /* Establece el color de fondo en aquamarine para los elementos del menú al pasar el cursor sobre ellos */
+    transition: ease-in .5s;
+    /* Agrega una transición suave de 0.5 segundos al cambio de color de fondo */
+    color: #333;
+}
+
+.menu .active a {
+    color: #333;
 }
 
 .menu li:hover {
@@ -160,7 +167,8 @@ main div {
 /* Estilos para el botón de descarga de PDF */
 .descarga-pdf button {
     padding: 10px 20px;
-    /* Establece el relleno (padding) de 10px en la parte superior e inferior y de 20px en los lados izquierdo y derecho del botón de descarga de PDF */
+    /* Establece el relleno (padding) de 10px en la parte superior e inferior y de 20px en los lados izquierdo y derecho del 
+    botón de descarga de PDF */
     background-color: aquamarine;
     /* Establece el color de fondo del botón en aquamarine */
     border: none;
@@ -321,7 +329,7 @@ main div {
 
 .servicio-card a {
     padding: 10px 20px;
-    /* Establece el relleno (padding) de 10px en la parte superior e inferior y de 20px en los lados izquierdo y derecho del botón de descarga de PDF */
+    /* Establece el relleno (padding) de 10px en la parte superior e inferior y de 20px en los lados izquierdo y derecho del boton */
     background-color: aquamarine;
     /* Establece el color de fondo del botón en aquamarine */
     border: none;
@@ -437,4 +445,29 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #45a049;
     /* Cambia el color de fondo a #45a049 al pasar por encima del botón */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para el texto de derechos de autor */
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Estilos para el enlace de derechos de autor */
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para el enlace de derechos de autor al pasar el cursor */
+footer a:hover {
+    text-decoration: underline;
 }

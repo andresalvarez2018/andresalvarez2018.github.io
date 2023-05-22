@@ -34,41 +34,44 @@
             </div>
             <ul class="menu">
                 <!-- Lista para los elementos del menú -->
-                <li class="active"><a href="/">Inicio</a></li>
+                <li ><a href="/">Inicio</a></li>
                 <!-- Elemento de lista con un enlace a la sección "inicio" -->
                 <li><a href="/about">Acerca de mi</a></li>
                 <!-- Elemento de lista con un enlace a la sección "about" -->
-                <li><a href="/services">Servicios</a></li>
+                <li ><a href="/services">Servicios</a></li>
                 <!-- Elemento de lista con un enlace a la sección "services" -->
-                <li><a href="/contact">Contacto</a></li>
+                <li class="active"><a href="/contact">Contacto</a></li>
                 <!-- Elemento de lista con un enlace a la sección de "contacto" -->
             </ul>
         </nav>
     </header>
-    <main id="inicio">
-        <!-- Sección principal con el id "inicio" -->
-        <div>
-            <!-- Contenedor principal de la sección "inicio" -->
-            <h1>Quien es <span>Andres Felipe Alvarez Perea</span></h1>
-            <!-- Título con el nombre del autor enmarcado en la etiqueta span -->
-            <p>Desarrollador web con más de 4 años de experiencia en los siguientes lenguajes: PHP, HTML, CSS3, JS,
-                Drupal,
-                MySQL
-                Además, estoy constantemente buscando oportunidades para seguir ampliando mis conocimientos en el
-                emocionante mundo de
-                la programación.</p>
-            <!-- Párrafo descriptivo -->
-            <a target="_blank" href="hv/HV.pdf" class="descarga-pdf">
-                <!-- Enlace a un archivo PDF en una nueva pestaña (_blank) -->
-                <button>Descargar hoja de vida</button>
-                <!-- Botón para descargar la hoja de vida -->
-            </a>
+    <section id="contacto" class="contact-section">
+        <!-- Sección de "contacto" con el id "contacto" y la clase "contact-section" -->
+        <div class="container">
+            <h2>Contáctame</h2>
+            <!-- Título de la sección -->
+            <form action="#" method="POST">
+                <!-- Formulario de contacto -->
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                </div>
+                <!-- Campo de entrada para el nombre -->
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
+                </div>
+                <!-- Campo de entrada para el correo electrónico -->
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                </div>
+                <!-- Campo de entrada para el mensaje -->
+                <button type="submit">Enviar</button>
+                <!-- Botón de envío del formulario -->
+            </form>
         </div>
-
-        <img src="images/photo.png" />
-        <!-- Imagen -->
-    </main>
-   
+    </section>
     <footer>
         <!-- Pie de página -->
         <p>Derechos de autor &copy; 2023 | Mi Página Web</p>
